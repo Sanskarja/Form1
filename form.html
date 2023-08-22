@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body
+        {
+            background-image: url('mediamodifier-nCk22aqZjlM-unsplash.jpg');
+            background-size: cover;
+        }
+        .container
+        {
+            margin-top: 260px;
+            margin-left: 510px;
+            max-width: 300px;
+        }
+        .btn
+        {
+            border: none;
+            color: white;
+            background-color: #04AA6D;
+            padding: 10px 20px;
+            opacity: 0.9;
+        }
+        .btn:hover
+        {
+            opacity: 1;
+        }
+        input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form class="container" onsubmit="takevalue()">
+        <label for="Name">Name: </label><br>
+        <input type="text" placeholder="Enter Name" name="Name" required id="name"><br>
+        <label for="age">Age: </label><br>
+        <input type="text" placeholder="Enter Age" name="age" required id="age"><br>
+        <label for="email">E-mail: </label><br>
+        <input type="text" placeholder="Enter E-mail" name="email" required id="eml"><br>
+        <label for="mno">Mobile No.:</label><br>
+        <input type="text" placeholder="Enter Mobile No." name="mno" required id="mno"><br>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+    <script>
+        function takevalue()
+        {
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var eml = document.getElementById("eml").value;
+            var mno = document.getElementById("mno").value;
+            document.write(name+"<br>");
+            document.write(age+"<br>");
+            document.write(eml+"<br>");
+            document.write(mno);
+        }
+    </script>
+</body>
+</html>    
